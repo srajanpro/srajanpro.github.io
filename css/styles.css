@@ -160,7 +160,7 @@ a {
   background-color: transparent;
 }
 a:hover {
-  color: #d6370c;
+  color:  #0E172A;
   text-decoration: underline;
 }
 
@@ -2439,14 +2439,14 @@ fieldset:disabled a.btn {
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #f24516;
-  border-color: #ee3e0d;
+  background-color: #0E172A;
+  border-color:#0E172A;
 }
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
-  background-color: #f24516;
-  border-color: #ee3e0d;
-  box-shadow: 0 0 0 0.2rem rgba(246, 122, 88, 0.5);
+  background-color:#0E172A;
+  border-color:#0E172A;
+  box-shadow: 0 0 0 0.2rem #0E172A;
 }
 .btn-primary.disabled, .btn-primary:disabled {
   color: #fff;
@@ -2455,11 +2455,11 @@ fieldset:disabled a.btn {
 }
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #ee3e0d;
-  border-color: #e23a0d;
+  background-color:#0E172A;
+  border-color:#0E172A;
 }
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(246, 122, 88, 0.5);
+  box-shadow: 0 0 0 0.2rem#0E172A;
 }
 
 .btn-secondary {
@@ -2878,7 +2878,7 @@ fieldset:disabled a.btn {
   text-decoration: none;
 }
 .btn-link:hover {
-  color: #d6370c;
+  color: #0E172A;
   text-decoration: underline;
 }
 .btn-link:focus, .btn-link.focus {
@@ -4578,7 +4578,7 @@ input[type=button].btn-block {
 }
 .page-link:hover {
   z-index: 2;
-  color: #d6370c;
+  color: #0E172A;
   text-decoration: none;
   background-color: #e9ecef;
   border-color: #dee2e6;
@@ -6075,7 +6075,7 @@ a.close.disabled {
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #ee3e0d !important;
+  background-color: #0E172A !important;
 }
 
 .bg-secondary {
@@ -9780,7 +9780,7 @@ button.bg-dark:focus {
 }
 
 a.text-primary:hover, a.text-primary:focus {
-  color: #d6370c !important;
+  color:  #0E172A !important;
 }
 
 .text-secondary {
@@ -10143,7 +10143,7 @@ header.masthead h1 {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(244, 98, 58, 0.9);
+  background: #0E172A;
   transition: opacity 0.25s ease;
   text-align: center;
 }
