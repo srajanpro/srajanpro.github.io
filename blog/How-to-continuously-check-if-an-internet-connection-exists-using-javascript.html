@@ -185,13 +185,13 @@
 
           <p>To accomplish this task we can use the global 'window' object.</p>
 
+          <h2 class="section-heading">Method 1 (Not much efficient)</h2>
+
           <p>To check if an internet connection exists, use the following JavaScript code:</p>
 
           <script src="https://gist.github.com/srajanpro/d77010fde0a6e2e775ce0d2c8b4ce2e2.js"></script>
 
           <p>The above line of code returns 'true' if an internet connection exists otherwise it returns 'false'.</p>
-
-          <h2 class="section-heading">The SetInterval API</h2>
 
           <p>Now, to make this code run every second, we can use the setInterval API, as given below:</p>
 
@@ -199,6 +199,22 @@
 
           <p>We can place the above code anywhere inside our application and test whether the internet connection is on
             or off.</p>
+
+          <h2 class="section-heading">Method 2 (Better Method)</h2>
+
+          <p>The above method is also known as Polling where we are continuously checking for something at regular intervals. This is not the most efficient method for detecting if an internet connection exists.</p>
+          
+          <p>Now, a better method can be to put an event listener to check for the status of the connection, whether it is online or offline.</p>
+
+          <p>To check if an Internet Connection exists we can use the following lines of code:</p>
+
+          <script src="https://gist.github.com/srajanpro/7da582566e661d3ecea6f0690254da68.js"></script>
+
+          <p>To check if there is No Internet Connection, we can use the following lines of code:</p>
+
+          <script src="https://gist.github.com/srajanpro/a21594ff5b07a7760c6d62770917de76.js"></script>
+
+          <p>We can test the above line of code by switching our Internet off and see the results.</p>
         </div>
       </div>
     </div>
