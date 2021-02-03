@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="" />
   <meta name="author" content="Srajan Gupta" />
-  <title>How to continuously check if an internet connection exists, using JavaScript?</title>
+  <title>What is an IIFE in JavaScript?</title>
   <meta name="theme-color" content="#0E172A, #000000" />
   <meta name="description"
     content="Hi, I am Srajan. I am a Tech Consultant & a Web Developer, currently based in India. I can build you beautiful, responsive, scalable, and feature-rich web based applications that solve real customer problems." />
@@ -163,12 +163,12 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="post-heading">
-            <h1>How to continuously check if an internet connection exists, using JavaScript?</h1>
+          <div class="post-heading text-center">
+            <h1>What is an IIFE in JavaScript?</h1>
             <!-- <h2 class="subheading">Problems look mighty small from 150 miles up</h2> -->
             <span class="meta">Posted by
               <a href="/">Srajan Gupta</a>
-              on February 1st, 2021</span>
+              on February 3rd, 2021</span>
           </div>
         </div>
       </div>
@@ -180,41 +180,40 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <p>Many times, inside an application, it is needed that some features should remain active only when an
-            internet connection exists.</p>
+          <p>If you are reading this blog post? The first question that should hit your mind is, what's IIFE?</p>
 
-          <p>To accomplish this task we can use the global 'window' object.</p>
-
-          <h2 class="section-heading">Method 1 (Not much efficient)</h2>
-
-          <p>To check if an internet connection exists, use the following JavaScript code:</p>
-
-          <script src="https://gist.github.com/srajanpro/d77010fde0a6e2e775ce0d2c8b4ce2e2.js"></script>
-
-          <p>The above line of code returns 'true' if an internet connection exists otherwise it returns 'false'.</p>
-
-          <p>Now, to make this code run every second, we can use the setInterval API, as given below:</p>
-
-          <script src="https://gist.github.com/srajanpro/412eb1c86659e3fd02a9ebe09dbba94a.js"></script>
-
-          <p>We can place the above code anywhere inside our application and test whether the internet connection is on
-            or off.</p>
-
-          <h2 class="section-heading">Method 2 (Better Method)</h2>
-
-          <p>The above method is also known as Polling where we are continuously checking for something at regular intervals. This is not the most efficient method for detecting if an internet connection exists.</p>
+          <h2 class="section-heading">IIFE stands for Immediately Invoked Function Expression</h2>
           
-          <p>Now, a better method can be to put an event listener to check for the status of the connection, whether it is online or offline.</p>
+          <p>IIFE is a JavaScript function that runs as soon as it is defined.</p>
 
-          <p>To check if an Internet Connection exists we can use the following lines of code:</p>
+          <p>An IIFE expression is a good way to protect the scope of your function and the variables within it.</p>
 
-          <script src="https://gist.github.com/srajanpro/7da582566e661d3ecea6f0690254da68.js"></script>
+          <p>If this sounds a bit complicated, don't worry, it's not.</p>
 
-          <p>To check if there is No Internet Connection, we can use the following lines of code:</p>
+          <p>Let us first find what a function is, in JavaScript?</p>
 
-          <script src="https://gist.github.com/srajanpro/a21594ff5b07a7760c6d62770917de76.js"></script>
+          <h2 class="section-heading">Ordinary Function</h2>
 
-          <p>We can test the above line of code by switching our Internet off and see the results.</p>
+          <p>Below given is an example of an ordinary function that is invoked when <b>calc();</b> is executed.</p>
+
+          <script src="https://gist.github.com/srajanpro/a1a600f800fcd66a02716ba05dbe47a7.js"></script>
+
+          <p>We can call calc() as many times as we want, whenever we want and wherever we want.</p>
+
+          <p>But what if we want to run the above function just once in our entire application? And never want it to be accidentally executed more than once anytime?</p>
+
+          <h2 class="section-heading">Converting to IIFE</h2>
+
+          <p>Let's try to convert the above function into an IIFE.</p>
+
+          <script src="https://gist.github.com/srajanpro/53251457aa1ad8ad53c7bb32a169b976.js"></script>
+
+          <p>The above is an IIFE expression and we can clearly see that it executes only once.</p>
+          
+          <p>We cannot access the inner variables outside the expression. Therefore, we can see that the scope of our function and the variables inside the expression is protected.</p>
+
+          <p>And the above IIFE can never be accidentally executed more than once inside the entire application.</p>
+
         </div>
       </div>
     </div>
